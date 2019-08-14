@@ -2,7 +2,7 @@
 	/* 
 	 * Paidy checkout JS template
 	 */
-
+	if ($this->isPaidySelected()) {
 ?>
 <script type="text/javascript">
   var paidy = Paidy.configure({
@@ -20,3 +20,5 @@
     return false;
   });
 </script>
+<?php
+	};
