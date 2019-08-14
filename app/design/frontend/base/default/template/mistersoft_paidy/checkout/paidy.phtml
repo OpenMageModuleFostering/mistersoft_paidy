@@ -1,0 +1,22 @@
+<?php
+	/* 
+	 * Paidy checkout JS template
+	 */
+
+?>
+<script type="text/javascript">
+  var paidy = Paidy.configure({
+    key: "<?php echo $this->getApiKey(); ?>",
+    callback: function(data){
+      jQuery("#paidy_paymentid").val(data.payment_id);
+	  review.save();
+    }
+  });
+  jQuery("#review-buttons-container .btn-checkout").prop('onclick', 'null');
+  jQuery("#review-buttons-container .btn-checkout").click ( function (e) {
+	e.preventDefault();
+    var data = <?php echo json_encode($this->getPaidyData()); ?>;
+    paidy.launch(data);
+    return false;
+  });
+</script>

@@ -1,0 +1,9 @@
+<?php
+	/* 
+	 * Paidy checkout hidden field
+	 */
+?>
+<?php $_code=$this->getMethodCode() ?>
+<ul class="form-list" id="payment_form_<?php echo $_code ?>" style="display:none;">
+<input type="hidden" name="payment[paymentid]" id="<?php echo $_code ?>_paymentid" value="<?php echo $this->getTransactionId(); ?>">
+</ul>

@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/MisterSoft_Paidy",
+    "type": "magento-module",
+    "license": "OSL-3.0",
+    "homepage": "",
+    "description": "Receive payments from over 100 million Japanese consumers through Paidy, a smart combination of konbini, atobarai, COD and bunkatsubarai. ",
+    "authors": [
+    {
+        "name": "Sergey Balitsky",
+        "email": "sergey.balitsky@gmail.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
