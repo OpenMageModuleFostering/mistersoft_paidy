@@ -1,3 +1,5 @@
+
+
 ## Original Package Description
 
 Receive payments from over 100 million Japanese consumers through Paidy, a smart combination of konbini, atobarai, COD and bunkatsubarai. 
